@@ -1,0 +1,411 @@
+<div id="divPostNews">
+    <div class="rowHeader">
+    <h2>Thông tin cơ bản</h2>
+    </div>
+    <div class="rowContent">
+    <div class="rowContentLeft">
+    <div class="rowPost">
+    <div style="color: #f00; text-align: center;">
+    <span id="LeftMainContent_GuestProductInsert_lblServerErrorMsg"></span>
+    </div>
+    <div class="leftArea leftPostArea">
+    <div id="labeltitle">
+    <label>
+    Dự án
+    </div>
+    <div class="base2">
+    <div id="divProject" class="comboboxs advance-select-box">
+    <span class="select-text"><input type="text" class="select-text-content" value="-- Dự án --" placeholder="-- Dự án --" style="width: 195.5px;"></span>
+    <input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$hddProject" id="hddProject" value="0">
+    <div id="divProjectOptions" class="advance-select-options advance-options" hddvalue="hddProject" ddlid="divProject" currlevel="1" >
+    <ul class="advance-options" style="min-width: 220px;">
+    <li vl="0" class="advance-options" style="min-width: 188px;">-- Dự án --</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="base1">
+    Diện tích
+    </div>
+    <div class="base4">
+    <div style="float: left;">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtArea" type="text" id="txtArea" class="text-field" style="width: 110px;" numberonly="2" maxlength="6" numbersonly="true" decimal="true">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    <span>m²</span>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Giá
+    </div>
+    <div class="base2">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtPrice" type="text" id="txtPrice" class="text-field" style="width: 215px;" numberonly="2" maxlength="6" numbersonly="true" decimal="true">
+    <span style="color: #f00; display: inline-block;"></span>
+    </div>
+    <div class="base1">
+    Đơn vị
+    </div>
+    <div class="base4">
+    <select id="ddlPriceType" class="dropdown-list">
+    </select>
+    <input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$hddPriceType" id="hddPriceType">
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Tổng giá tiền:
+    </div>
+    <div class="base2" id="_totalPrice" style="color: #f00;">
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Địa chỉ (<span class="redfont">*</span>)
+    </div>
+    <div class="base5">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtAddress" type="text" id="txtAddress" style="width: 590px;" class="text-field required" maxlength="200">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+    </div>
+    <div class="rowHeader">
+    <h2>Thông tin mô tả</h2>
+    </div>
+    <div class="rowContent">
+    <div class="postrow product-description">
+    <p>
+    (<span class="redfont">*</span>)<span class="grayfont"> Tối đa chỉ 3000 ký tự</span>
+    </p>
+    <textarea name="ctl00$LeftMainContent$GuestProductInsert$txtDescription" id="txtDescription" style="height: 170px; width: 435px; max-width: 435px; float: left" class="text-field countTypeLength required mt10" rows="50" cols="100" minlength="30" maxlength="3000"></textarea>
+    <div rel="txtDescription" style="float: left; margin-top: 5px; padding-left: 5px; text-align: justify; width: 270px;">
+    <div class="text">
+    <img src="https://file4.batdongsan.com.vn/images/Home/images/arrow.png" alt="">
+    Giới thiệu chung về bất động sản của bạn. Ví dụ: Khu nhà có vị trí thuận lợi: Gần
+    công viên, gần trường học ... Tổng diện tích 52m2, đường đi ô tô vào tận cửa.<br>
+    <span style="color: #f00;">Lưu ý: tin rao chỉ để mệnh giá tiền Việt Nam Đồng.</span>
+    </div>
+    </div>
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    <div class="clear">
+    </div>
+    </div>
+    <div class="rowHeader">
+    <h2>Thông tin khác</h2>
+    </div>
+    <div class="rowContent">
+    <div style="padding: 10px 20px 0 20px;">
+    Quý vị nên điền đầy đủ thông tin vào các mục dưới đây để tin đăng có hiệu quả hơn
+    </div>
+    <div class="rowContentLeft">
+    <div class="postrow">
+    <div class="spMatTien">
+    <div class="base1">
+    Mặt tiền (m)
+    </div>
+    <div class="base2">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtWidth" type="text" id="txtWidth" maxlength="6" numberonly="2" numbersonly="true" decimal="true" class="text-field">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    <div class="spDuongVao">
+    <div class="base1">
+    Đường vào (m)
+    </div>
+    <div class="base4">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtLandWidth" type="text" id="txtLandWidth" maxlength="6" numberonly="2" numbersonly="true" decimal="true" class="text-field">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Hướng nhà
+    </div>
+    <div class="base2">
+    <select id="ddlHomeDirection" class="dropdown-list">
+    <option value="0">KXĐ</option><option value="1">Đông</option><option value="2">Tây</option><option value="3">Nam</option><option value="4">Bắc</option><option value="5">Đông-Bắc</option><option value="6">Tây-Bắc</option><option value="7">Tây-Nam</option><option value="8">Đông-Nam</option></select>
+    <input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$hddHomeDirection" id="hddHomeDirection">
+    </div>
+    <div class="spBanCong">
+    <div class="base1">
+    Hướng ban công
+    </div>
+    <div class="base4">
+    <select id="ddlBaconDirection" class="dropdown-list">
+    <option value="0">KXĐ</option><option value="1">Đông</option><option value="2">Tây</option><option value="3">Nam</option><option value="4">Bắc</option><option value="5">Đông-Bắc</option><option value="6">Tây-Bắc</option><option value="7">Tây-Nam</option><option value="8">Đông-Nam</option></select>
+    <input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$hddBaconDirection" id="hddBaconDirection">
+    </div>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="spSoTang">
+    <div class="base1">
+    Số tầng
+    </div>
+    <div class="base2">
+    <div style="width: 100%; float: left;">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtFloorNumbers" type="text" id="txtFloorNumbers" class="text-field" maxlength="3" numberonly="1" numbersonly="true" decimal="false">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="spSoPhongNgu">
+    <div class="base1">
+    Số phòng ngủ
+    </div>
+    <div class="base2">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtRoomNumber" type="text" id="txtRoomNumber" class="text-field" maxlength="3" numbersonly="true" decimal="false" numberonly="1" onkeypress="return numbersonly(this, event);">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    <div class="spToilet">
+    <div class="base1">
+    Số toilet
+    </div>
+    <div class="base2">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtToiletNumber" type="text" id="txtToiletNumber" class="text-field" maxlength="3" numbersonly="true" decimal="false" numberonly="1">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="spNoiThat">
+    <div class="base1">
+    Nội thất
+    </div>
+    <div class="base5">
+    <div style="width: 100%; float: left;">
+    <textarea name="ctl00$LeftMainContent$GuestProductInsert$txtInterior" id="txtInterior" rows="10" cols="50" class="text-field" style="width: 590px; height: 130px" maxlength="200"></textarea>
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="spLegality">
+    <div class="base1">
+    Thông tin pháp lý
+    </div>
+    <div class="base5">
+    <div style="width: 100%; float: left;">
+    <textarea name="ctl00$LeftMainContent$GuestProductInsert$txtLegality" id="txtLegality" rows="2" cols="50" class="text-field" style="width: 590px; height: 60px" maxlength="255" placeholder="Ví dụ: Đã có sổ đỏ. Đã có sổ hồng. Đã được phê duyệt quyết định đầu tư..."></textarea>
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+    </div>
+    <div class="rowHeader">
+    <h2>Hình ảnh và Video</h2>
+    </div>
+    <div class="rowContent">
+    
+    <div class="postrow product-image">
+    <p>Số lượng ảnh tối đa theo các loại tin: VIP Đặc biệt - 24 ảnh, VIP1 - 20 ảnh, VIP2 &amp; VIP 3 - 18 ảnh, VIP Ưu đãi - 16 ảnh, Tin thưởng - 8 ảnh. Mỗi ảnh tối đa 2MB</p>
+    <span id="LeftMainContent_GuestProductInsert_FileServer2" class=" bdsGuestUpload360"><input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$FileServer2$ctl00" id="LeftMainContent_GuestProductInsert_FileServer2_ctl00"><link href="/trang-ca-nhan/Plugin/BDSUpload/css.css" rel="stylesheet" type="text/css"><div id="LeftMainContent_GuestProductInsert_FileServer2_container" maxcount="24" input="LeftMainContent_GuestProductInsert_FileServer2_ctl00" sv="http://upload2.batdongsan.com.vn/" class="guestupload upload-create-form bdsGuestUpload360" svid="3" key="smnCvICdE30twABRvOdQPoffXeFeACijgrjcM6GT5R0=" is360="true"><div class="droptext textUploadNotice">Tin rao có ảnh sẽ được xem nhiều hơn gấp 10 lần và được nhiều người gọi gấp 5 lần so với tin rao không có ảnh. Hãy đăng ảnh để được giao dịch nhanh chóng!</div><div class="thumbnails ui-sortable"></div><div style="float: left;margin-right: 5px;border-radius: 5px;width: 164px;height: 230px;background-image: url(/Plugin/BDSUpload/images/bg-upload-area.png);background-color: rgb(218, 228, 237); position: relative; overflow: hidden; direction: ltr; background-position: 50% 95%;background-repeat: no-repeat no-repeat; margin-bottom: 10px; display:none;" class="divFileProgressContainer"><div class="progressWrapper" id="divFileProgress"></div></div><div class="spanButtonPlaceholder block-upload-item" id="upload-drop-zone" style="position: relative; overflow: hidden; direction: ltr;"><p>(Click để tải ảnh<br> hoặc kéo thả ảnh vào đây)</p><input multiple="multiple" type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><div class="divFileProgressContainer1" style="display: none;"></div><div class="droptext">Đăng ảnh thật nhanh bằng cách kéo và thả ảnh vào khung.  Thay đổi vị trí của ảnh bằng cách kéo ảnh vào vị trí mà bạn muốn!</div></div></span>
+    </div>
+    <div class="guide-360">
+    <div class="header" onclick="guid360()">
+    <img src="https://file4.batdongsan.com.vn/images/tooltip/360.png">
+    Hướng dẫn đăng ảnh 360°
+    </div>
+    
+    <div class="guide-control">
+    <span class="arrow-up" style="display: none;">
+    <img class="up" src="https://file4.batdongsan.com.vn/images/tooltip/up-arrrow.png"></span>
+    <span class="arrow-down">
+    <img class="up" src="https://file4.batdongsan.com.vn/images/tooltip/down-arrow.png"></span>
+    </div>
+    </div>
+   
+    Tên liên hệ:
+    </div>
+    <div class="base5">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtBrName" type="text" id="txtBrName" class="text-field" maxlength="200" style="width: 590px;">
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Địa chỉ:
+    </div>
+    <div class="base5">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtBrAddress" type="text" id="txtBrAddress" class="text-field" maxlength="200" style="width: 590px;">
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Điện thoại:
+    </div>
+    <div class="base51">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtBrPhone" type="text" id="txtBrPhone" class="text-field" numberonly="1" style="width: 100%;" maxlength="12" onkeypress="return isNumberKey(event);" decimal="false">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Di động:(<span class="redfont">*</span>)
+    </div>
+    <div class="base51">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtBrMobile" type="text" id="txtBrMobile" class="text-field required" style="width: 100%;" numberonly="1" maxlength="12" minlength="8" onkeypress="return isNumberKey(event);" decimal="false">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    </div>
+    <div class="postrow">
+    <div class="base1">
+    Email:
+    </div>
+    <div class="base51">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtBrEmail" type="text" id="txtBrEmail" class="text-field email-field" maxlength="100" style="width: 100%;" email="1">
+    <span class="errorMessage" style="display: none;"></span>
+    </div>
+    <div class="base2" style="padding-left: 10px; padding-top: 6px;">
+    <label for="chkReceiEmail" id="lblchkReceiEmail">
+    <input name="ctl00$LeftMainContent$GuestProductInsert$chkReceiEmail" type="checkbox" id="chkReceiEmail" disabled="">
+    Nhận email phản hồi
+    </label>
+    </div>
+    </div>
+    </div>
+    <div class="rowContentRight" id="helpMessageContactName" style="display: none;">
+    <div class="image">
+    <img src="https://file4.batdongsan.com.vn/images/Home/images/arrow.png" alt="">
+    </div>
+    <div class="text">
+    Vui lòng nhập tên để người đọc tin có thể liên lạc với bạn.
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+    </div>
+    <div class="rowHeader">
+    <h2>Lịch đăng tin</h2>
+    </div>
+    <div class="rowContent product-vipconfig">
+    <div class="vip_cofig_info">
+    <ul id="row_0">
+    <li class="type">
+    <p>
+    Loại tin rao
+    </p>
+    <p>
+    <select id="ddlVipType" class="dropdown-list mt5">
+    <option value="5">Tin thường</option><option value="4">Tin ưu đãi</option><option value="3">Tin Vip 3</option><option value="2">Tin Vip 2</option><option value="1">Tin Vip 1</option><option value="0">Vip đặc biệt</option></select>
+    <input type="hidden" name="ctl00$LeftMainContent$GuestProductInsert$hddVipType" id="hddVipType" value="5">
+    </p>
+    </li>
+    <li class="begindate">
+    <p>
+    Ngày bắt đầu
+    </p>
+    <p>
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtStartDate" type="text" id="txtStartDate" class="text-field required mt5 hasDatepicker" value="19/11/2020">
+    <label class="errorMessage" style="display: none;">
+    </label>
+    </p>
+    </li>
+    <li class="enddate">
+    <p>
+    Ngày kết thúc
+    </p>
+    <p>
+    <input name="ctl00$LeftMainContent$GuestProductInsert$txtEndDate" type="text" id="txtEndDate" class="text-field required mt5 hasDatepicker" value="19/12/2020">
+    <label class="errorMessage" style="display: none;">
+    </label>
+    </p>
+    </li>
+    </ul>
+    </div>
+    <div class="clear"></div>
+    <div id="vip_cofig_info_explain"  ><strong>Tin thường</strong>: Là loại tin đăng bằng chữ <font color="#009AD2">màu xanh</font>, khung <font color="#009AD2">màu xanh</font></div>
+    <div class="vip_cofig_info">
+    <div class="product-unitprice">
+    <label>Đơn giá cuối cùng: </label>
+    <span>2 nghìn 727 đồng/Ngày</span>
+    </div>
+    <div class="product-totaldate">
+    <label>Số ngày: </label>
+    <span>30 ngày</span>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="product-vipnotice">
+    <img alt="vip icon" src="https://file4.batdongsan.com.vn/images/Home/images/vip-icon.jpg" style="padding-top: 3px;">
+    <div> 
+    Quý khách nên chọn đăng tin Vip để có hiệu quả cao hơn, ví dụ: tin Vip1 có lượt
+    xem trung bình cao hơn <strong>20 lần</strong> so với tin thường
+    </div>
+    </div>
+    </div>
+    <div class="rowHeader">
+    <h2>Thành tiền</h2>
+    </div>
+    <div class="rowContent product-cost">
+    <table border="1" class="tblPrice">
+    <tbody><tr>
+    <th>Phí đăng tin</th>
+    <th>VAT(10%)</th>
+    <th></th>
+    <th>Thành tiền</th>
+    </tr>
+    <tr>
+    <td id="lblPrice">81 nghìn 810 đồng</td>
+    <td id="lblVAT">8 nghìn 181 đồng</td>
+    <td></td>
+    <td id="lblCost">90 nghìn</td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div id="LeftMainContent_GuestProductInsert_divCapCha1" class="rowPost">
+    <table class="product-captcha" border="0">
+    <tbody><tr>
+    <td></td>
+    <td>
+    <img id="img_CAPTCHA_RESULT_314" src="/trang-ca-nhan/HandlerWeb/Captcha.ashx" alt="" noloaderror="1">
+    <img id="reloadCaptcha" class="reloadCapcha" onmouseover="this.style.cursor='pointer'" onclick="javascript:refreshNewCaptcha('img_CAPTCHA_RESULT_314');" title="Đổi mã an toàn" alt="renew capcha" src="https://file4.batdongsan.com.vn/images/Home/images/icon-reload.png">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label>Mã an toàn</label>
+    (<span class="redfont">*</span>)
+    </td>
+    <td>
+    <input name="ctl00$LeftMainContent$GuestProductInsert$secode" type="text" id="secode" class="text-field required" maxlength="4" autocomplete="nope"><br>
+    <span class="errorMessage" style="display: none;"></span>
+    
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2">(Trong trường hợp hiện ra thông báo "Mã an toàn bạn nhập vào chưa đúng" bạn vui lòng nhấn vào nút
+    <img width="15px" src="https://file4.batdongsan.com.vn/images/Home/images/icon-reload.png">
+    để tạo mã an toàn mới và thử lại)
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div id="finalError"></div>
+    <div id="LeftMainContent_GuestProductInsert_divButton" class="rowPost">
+    <table style="border-collapse: collapse; width: 150px; margin: 0px auto;" border="0">
+    <tbody><tr>
+    <td>
+    <input type="submit" name="ctl00$LeftMainContent$GuestProductInsert$btnSave" value="Đăng tin không cần tài khoản" onclick="return SubmitForm();" id="btnSave" class="bluebotton">
+    </td>
+    <td>
+    <input id="btnCancel" type="button" value="Xem trước" class="orangebutton" onclick="ShowPreview()">
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="clear">
+    </div>
+    

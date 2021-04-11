@@ -1,0 +1,25 @@
+         *{margin: auto;}
+    .dangtin{
+        width: 700px;
+        height: 500px;
+        
+    }
+    .thongtin{
+        width: 700px;
+        height: 40px;
+        background-color: darkblue;
+        margin-top: 50px;
+    }
+    .thongtin p{
+     color: #fff;
+    background: #055ba2;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px 4px 0 0;
+    
+    }
+   .btn{
+       margin-left: 600px;
+   }
+    
