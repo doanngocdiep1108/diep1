@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexUser}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="https://staticfile.batdongsan.com.vn/css/binnova/filestatic.ver202011270403.msvbds.home.min.css" />
+
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+
+</head>
+<body>
+	<content layout:fragment="main"> <header class="row-md head">
+		<div class="row-md ">
+			<div class="slogan">
+				<h1 style="font-size: 26px; font-weight: bold;">NHANH CHÓNG -
+					ĐẲNG CẤP - UY TÍN</h1>
+			</div>
+			<div class="row-md" style="text-align: center;">
+				<form class="form-inline" th:action="@{/find}">
+					<select name="id"
+						class="mdb-select form-control colorful-select dropdown-primary "
+						searchable="Hình thức">
+						<option value="B">bds bán</option>
+						<option value="T">bds thuê</option>
+					</select> <input class="form-control " type="search" name="name"
+						placeholder="Search" aria-label="Search">
+					<!--Blue select-->
+					<select name="type"
+						class="mdb-select form-control colorful-select dropdown-primary "
+						searchable="Loại nhà đất">
+						<option value="">Loại nhà đất</option>
+						<option value="Nha Rieng">Nhà riêng</option>
+						<option value="Chung Cu">Chung cư</option>
+						<option value="Can Ho">Căn hộ</option>
+						<option value="Biet Thu">Biệt thự</option>
+						<option value="MatBang">Mặt bằng</option>
+						<option value="">Tất cả</option>
+					</select> <select name="s"
+						class="mdb-select form-control colorful-select dropdown-primary "
+						searchable="Diện tích">
+						<option value="100">Dưới 100 m2</option>
+						<option value="200">100 m2 - 200 m2</option>
+						<option value="300">200 m2 - 300 m2</option>
+						<option value="10000">Trên 300m2</option>
+					</select> <select name="price"
+						class="mdb-select form-control colorful-select dropdown-primary "
+						searchable="Giá">
+						<option value="100000000">Dưới 100 triệu</option>
+						<option value="1000000000">100 triệu - 1 tỷ</option>
+						<option value="2000000000">1 tỷ - 2 tỷ</option>
+						<option value="5000000000">2 tỷ - 5 tỷ</option>
+						<option value="10000000000">Trên 5 tỷ</option>
+					</select>
+					<button class="btn btn-success" type="submit">Search</button>
+				</form>
+			</div>
+
+		</div>
+	</header>
+	<div class="home-hotnews m-b-30 m-t-38">
+		<h3 style="font-size: 25px;">Tin mới nhất</h3>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper" style="margin-left: -35px;">
+				<li uid="DVG.BDS.Model.Articles.ArticleDisplay" class="swiper-slide"
+					th:each="item:${BDS}"><a th:href="@{'/chitiet/'+${item.id}}">
+						<div class="hotnews-img">
+
+							<img alt="article.ArticleTitle" noloaderror="true" imgerr="1"
+								th:src="@{'getimg/'+${item.image}}" is-lazy-image="true" />
+						</div>
+						<div class="hotnews-link">
+							<h4 th:text="${item.name}"></h4>
+							<p>
+								Diện tích: <i th:text="${item.s}" style="margin-right: 20px"></i>
+								m2
+
+							</p>
+							<p>
+								<i class="glyphicon glyphicon-map-marker"
+									th:text="${item.address}"> </i> <i th:text="${item.city}"
+									style="float: right; margin-right: 10px"></i>
+							</p>
+							<p class="glyphicon glyphicon-people" th:text="${item.people}"></p>
+							<u th:text="${item.time}"
+								style="float: right; margin-right: 10px;"></u>
+						</div>
+				</a></li>
+			</ul>
+		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+	<script type="text/javascript">
+		(function callJQuery() {
+			if (window.FrontEnd && window.FrontEnd.Home
+					&& window.FrontEnd.Home.VipNewsBinnova) {
+				new window.FrontEnd.Home.VipNewsBinnova({});
+			} else {
+				setTimeout(callJQuery, 100)
+			}
+		})();
+	</script> <script
+		src="https://staticfile.batdongsan.com.vn/js/Common/filestatic.ver202011270403.msvbds.FrontEnd.Common.Home.min.js"></script>
+	<script
+		marking-product-service-params={&quot;unmarkProductUrl&quot;:&quot;/Product/MarkedProducts/UnmarkProduct&quot;,&quot;getMarkedProductsByIdsUrl&quot;:&quot;/Product/ProductDetail/GetMarkedListing&quot;,&quot;markedProductsSyncTime&quot;:24,&quot;listingLimit&quot;:50}
+		searching-histories-service-params={&quot;maxSearchingHistoriesLength&quot;:20,&quot;syncTimeSearchingHistories&quot;:5.0,&quot;syncSearchingHistoriesUrl&quot;:&quot;/Product/ProductSearch/SyncSearchingHistories&quot;,&quot;removeSearchingHistoryUrl&quot;:&quot;/Product/ProductSearch/RemoveSearchingHistory&quot;}
+		src="https://staticfile.batdongsan.com.vn/js/binnova/filestatic.ver202011270403.msvbds.FrontEnd.Home.min.js"></script>
+	<script type="text/javascript">
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var lazyImages = [].slice.call(document.querySelectorAll('[src-lazy]'));
+                                window.countOfLazyImages = lazyImages.length;
+                                if ('IntersectionObserver' in window) {
+                                    let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                                        entries.forEach(function (entry) {
+                                            if (entry.isIntersecting) {
+                                                let lazyImage = entry.target;
+                                                if (lazyImage.attributes['src-lazy']) {
+                                                    lazyImage.src = lazyImage.attributes['src-lazy'].value;
+                                                    lazyImage.removeAttribute('src-lazy');
+                                                    lazyImageObserver.unobserve(lazyImage);
+                                                }
+                                            };
+                                        });
+                                    });
+                                    lazyImages.forEach(function (lazyImage, i) {
+                                        lazyImage.setAttribute('lazy-id', i);
+                                        lazyImageObserver.observe(lazyImage);
+                                    });
+                                    (function checkDuplicate() {
+                                        var countOfLazyElements = [].slice.call(document.querySelectorAll('[lazy-id]'));
+                                        if (countOfLazyElements.length > window.countOfLazyImages) {
+                                            var elements = [].slice.call(document.querySelectorAll('[src-lazy]'));
+                                            elements.forEach(element => {
+                                                var lazyId = element.attributes['lazy-id'].value;
+                                                var lazyElements = [].slice.call(document.querySelectorAll(`[lazy-id="${lazyId}"]`));
+                                                if (lazyElements.length > 1) {
+                                                    for (var i = 1; i < lazyElements.length; i++) {
+                                                        var lazyElement = lazyElements[i];
+                                                        lazyImageObserver.observe(lazyElement);
+                                                        lazyElement.setAttribute('lazy-id', window.countOfLazyImages);
+                                                        window.countOfLazyImages++;
+                                                    }
+                                                }
+                                            });
+                                        }
+                                        setTimeout(checkDuplicate, 1000)
+                                    })();
+                                } else {
+                                    $('[src-lazy]').each(function () {
+                                        this.src = this.attributes['src-lazy'].value;
+                                        this.removeAttribute('src-lazy');
+                                    });
+                                }
+                            });
+                        </script>
+	<div>
+		<h3 style="font-size: 25px;">Dự án nổi bật</h3>
+		<hr>
+		<div>
+			<img id="slideshow" src="photo/slide2.jpg" width="100%"
+				height="350px">
+		</div>
+		<script>
+			var arr = [ 'photo/slide2.jpg', 'photo/slide3.jpg',
+					'photo/slide4.jpg',
+
+			];
+			var vt = 0;
+
+			function slideshows() {
+				document.getElementById('slideshow').src = arr[vt];
+				vt++;
+				if (vt == arr.length) {
+					vt = 0;
+				}
+				setTimeout("slideshows()", 2000);
+			}
+			slideshows();
+		</script>
+
+	</div>
+	<div class=" adres ">
+		<h3 style="font-size: 25px;">Bất động sản theo quận</h3>
+		<hr>
+		<div class="col-md-2">
+			<a href="#">
+				<h4>Q. Thanh Khe</h4> <img src="/photo/cauvuot.jpg" width="100%"
+				height="100px">
+			</a>
+
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<h4>Q. Son Tra</h4> <img src="/photo/sontra.jpg" width="100%"
+				height="100px">
+			</a>
+		</div>
+
+		<div class="col-md-2 ">
+			<a href="#">
+				<h4>Q. Ngu Hanh Son</h4> <img src="/photo/nhs.jpg" width="100%"
+				height="100px">
+			</a>
+		</div>
+		<div class="col-md-2 ">
+			<a href="#">
+				<h4>Q.Hai Chau</h4> <img src="/photo/danang.jpg" width="100%"
+				height="100px">
+			</a>
+		</div>
+		<div class="col-md-2 ">
+			<a href="#">
+				<h4>Q. Cam Le</h4> <img src="/photo/hoacam.jpg" width="100%"
+				height="100px">
+			</a>
+		</div>
+		<div class="col-md-2 ">
+			<a href="#">
+				<h4>Q.Lien Chieu</h4> <img src="/photo/hoakhanh.jpg" width="100%"
+				height="100px">
+			</a>
+		</div>
+	</div>
+	</content>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+
+</body>
+</html>

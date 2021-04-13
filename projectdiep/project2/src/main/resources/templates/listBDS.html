@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexAdmin}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+
+</head>
+<body>
+	<content layout:fragment="main">
+	<div class="row-md" style="text-align: center;">
+	<form class="form-inline" th:action="@{/bds/find}">
+				<select name="id"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Hình thức">
+					<option value="B">bds bán</option>
+					<option value="T">bds thuê</option>
+				</select> <input class="form-control " type="search" name="name"
+					placeholder="Search" aria-label="Search">
+				<!--Blue select-->
+				<select name="type"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Loại nhà đất">
+					<option value="">Loại nhà đất</option>
+					<option value="Nha Rieng">Nhà riêng</option>
+					<option value="Chung Cu">Chung cư</option>
+					<option value="Can Ho">Căn hộ</option>
+					<option value="Biet Thu">Biệt thự</option>
+					<option value="MatBang">Mặt bằng</option>
+					<option value="">Tất cả</option>
+				</select> <select name="s"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Diện tích">
+					<option value="100">Dưới 100 m2</option>
+					<option value="200">100 m2 - 200 m2</option>
+					<option value="300">200 m2 - 300 m2</option>
+					<option value="10000">Trên 300m2</option>
+				</select> <select name="price"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Giá">
+					<option value="100000000">Dưới 100 triệu</option>
+					<option value="1000000000">100 triệu - 1 tỷ</option>
+					<option value="2000000000">1 tỷ - 2 tỷ</option>
+					<option value="5000000000">2 tỷ - 5 tỷ</option>
+					<option value="10000000000">Trên 5 tỷ</option>
+				</select>
+				<button class="btn btn-success" type="submit">Search</button>
+			</form>
+	</div>
+
+	<div>
+		<a class="btn btn-primary" href="/bds/">ADD BDS</a> <a
+			class="btn btn-primary" style="float: right" href="/img/list">Image</a>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th scope="col">id</th>
+					<th scope="col">name</th>
+					<th scope="col">address</th>
+					<th scope="col">district</th>
+					<th scope="col">city</th>
+					<th scope="col">price</th>
+					<th scope="col">s</th>
+					<th scope="col">people</th>
+					<th scope="col">time</th>
+					<th scope="col">phone</th>
+					<th scope="col">note</th>
+					<th scope="col">type</th>
+					<th scope="col">image</th>
+					<th></th>
+			</thead>
+			<tbody>
+				<tr th:each="item:${BDS}">
+					<td th:text="${item.id}"></td>
+					<td th:text="${item.name}"></td>
+					<td th:text="${item.address}"></td>
+					<td th:text="${item.district}"></td>
+					<td th:text="${item.city}"></td>
+					<td th:text="${item.price}"></td>
+					<td th:text="${item.s}"></td>
+					<td th:text="${item.people}"></td>
+					<td th:text="${item.time}"></td>
+					<td th:text="${item.phone}"></td>
+					<td th:text="${item.note}"></td>
+					<td th:text="${item.type}"></td>
+					<td width="150"><img th:src="@{'getimg/'+${item.image}}"
+						width="120" height="80" /></td>
+					<td><a class="btn btn-primary btn-sm"
+						th:href="@{'/bds/edit/'+${item.id}}">Edit</a> | <a
+						class="btn btn-danger btn-sm"
+						th:href="@{'/bds/delete/'+${item.id}}">Del</a></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+	</content>
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</body>
+</html>

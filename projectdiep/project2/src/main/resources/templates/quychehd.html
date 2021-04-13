@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexUser}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+<link rel="stylesheet" th:href="@{/css/style_Bantin_BanNhaDat.css}" />
+</head>
+<body class="content">
+
+	<content layout:fragment="main">
+	<div class="bantin row">
+		<aside class="col-md-3">
+			<div>
+				<div class="right-box">
+					<h2 class="title-right-box">Chuyên mục</h2>
+					<ul class="category-right">
+						<li><a href="#">Giới Thiệu</a></li>
+						<li><a href="#">Liên Hệ </a></li>
+						<li><a href="#">Quy định đăng tin</a></li>
+						<li><a href="#">Quy chế hoạt động </a></li>
+					</ul>
+				</div>
+				<!-- right box -->
+				
+				<!-- right box -->
+				<div class="new-blog">
+					<h2 class="title-right-box">QUY CHẾ HOẠT ĐỘNG</h2>
+					<div class="post-right">
+						<div class="number-post">1</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc1">Nguyên tắc chung.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">2</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc2">Quy định chung.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">3</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc3">Quy trình đăng tin.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">4</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc4"> Quy trình giải quyết tranh chấp, khiếu nại.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">5</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc5">  Quy trình thanh toán.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">6</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc6">  Đảm bảo an toàn giao dịch.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">7</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="#qc7">  Bảo vệ thông tin thành viên.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					 
+				</div>
+
+			</div>
+			<!-- col-3 right -->
+		</aside>
+		<article class="col-md-9">
+
+			<div class="html-content">
+				<p>&nbsp;</p>
+				<p text-align="center">
+					<strong>QUY CHẾ HOẠT ĐỘNG</strong>
+				</p>
+				<p text-align="center">
+					<strong>SÀN GIAO DỊCH THƯƠNG MẠI ĐIỆN TỬ STAR</strong>
+				</p>
+				<p>&nbsp;</p>
+				<p>
+					<span><strong id="qc1">I.&nbsp;&nbsp; &nbsp;Nguyên tắc chung</strong></span>
+				</p>
+				<p>
+					Sàn giao dịch thương mại điện tử Star (sau đây gọi là <strong>“Star”</strong>)
+					do Công ty Cổ phần Star Việt Nam làm chủ sở hữu. Star là
+					sàn giao dịch thương mại điện tử cung cấp thông tin bất động sản,
+					dịch vụ bất động sản trong và ngoài nước cho cá nhân, tổ chức có
+					nhu cầu về bất động sản và các dịch vụ khác liên quan đến bất động
+					sản.<br> <br> Thành viên tham gia Star là các cá nhân, tổ
+					chức đã đăng ký thành viên và các cá nhân, tổ chức vãng lai đã kê
+					khai thông tin bắt buộc được Sàn Star chính thức công nhận và cho
+					phép sử dụng dịch vụ do Star cung cấp.<br> <br> Thành
+					viên tham gia Star được quyền tự do tìm hiểu và thỏa thuận với bên
+					có nhu cầu trên cơ sở tôn trọng quyền và lợi ích hợp pháp của các
+					bên.<br> <br> Bất động sản, dịch vụ liên quan đến bất
+					động sản trong các nội dung tin, baner quảng cáo … được đăng trên
+					Star phải đáp ứng đầy đủ các quy định của pháp luật có liên quan,
+					không thuộc các trường hợp cấm kinh doanh, cấm quảng cáo theo quy
+					định của pháp luật<br> <br> Mọi hoạt động được thực hiện
+					tại Star được thực hiện một cách tự do, bình đẳng, công khai, minh
+					bạch và đảm bảo quyền lợi hợp pháp của thành viên.
+				</p>
+				<p>
+					<span><strong id="qc2">II.&nbsp;&nbsp; &nbsp;Quy định chung</strong></span><br>
+					<br> <strong>1.&nbsp;&nbsp; &nbsp;Đối tượng áp dụng</strong>
+				</p>
+				<p>
+					Quy chế này được xây dựng trên cơ sở tuân thủ pháp luật Việt Nam
+					hiện hành và áp dụng cho các thành viên đăng ký tham gia, sử dụng
+					dịch vụ đăng tin, đăng baner quảng cáo,… trên Star.<br> <br>
+					Thành viên khi tham gia vào Star có trách nhiệm nghiên cứu kỹ quy
+					chế hoạt động của Star và chịu trách nhiệm pháp lý đối với mọi hoạt
+					động, tin, baner quảng cáo … đã đăng trên Star.
+				</p>
+				<p>
+					<strong>2.&nbsp;&nbsp; &nbsp;Phạm vi điều chỉnh</strong>
+				</p>
+				<p>Quy chế này quy định mục đích và nguyên tắc hoạt động của
+					Star. Đồng thời, quy định những nguyên tắc xử sự chung của các
+					thành viên tham gia và sử dụng dịch vụ trên Star.</p>
+				<p>
+					<strong>3.&nbsp;&nbsp; &nbsp;Quy định về thành viên tham
+						gia Star</strong>
+				</p>
+				<p>
+					Thành viên tham gia Star hay người sử dụng dịch vụ của Star là
+					người có nhu cầu đăng tin bán, cho thuê, mua, thuê bất động sản và
+					các dịch vụ khác (nếu có) tại Star (sau đây gọi là “Người đăng
+					tin”).<br> Người đăng tin được phép đăng tin sau khi kê khai
+					thông tin bắt buộc hoặc hoàn tất thủ tục đăng ký thành viên theo
+					quy định của Star.<br> Người đăng tin phải là các cá nhân, tổ
+					chức đáp ứng các điều kiện của pháp luật và Quy chế này, bao gồm và
+					không giới hạn như:<br> -&nbsp;&nbsp; &nbsp;Có đầy đủ năng lực
+					hành vi dân sự;<br> -&nbsp;&nbsp; &nbsp;Tuân thủ các điều
+					khoản trong Quy chế này về việc sử dụng dịch vụ của Star;<br>
+					-&nbsp;&nbsp; &nbsp;Bảo vệ tài khoản, mật khẩu đăng nhập và giám
+					sát các thông tin liên quan đến tài khoản của mình. Chịu toàn bộ
+					trách nhiệm trong trường hợp tài khoản của Người đăng tin được sử
+					dụng bởi bất cứ ai mà Người đăng tin cho phép truy cập và sử dụng.<br>
+					-&nbsp;&nbsp; &nbsp;Toàn bộ thông tin Người đăng tin cung cấp cho
+					Star là chính xác, đầy đủ, và được cập nhật kịp thời ngay sau khi
+					có sự thay đổi.
+				</p>
+				<p>
+					<span><strong id="qc3">III.&nbsp;&nbsp; &nbsp;Quy trình đăng
+							tin</strong></span>
+				</p>
+				<p>
+					Có hai cách đăng tin trên Star<br> <br> <strong>1.&nbsp;&nbsp;
+						&nbsp;Cách 1: Đăng tin trực tiếp trên Star mà không cần tài khoản
+						(đăng tin vãng lai không cần tài khoản)</strong>
+				</p>
+				<p>
+					<strong>Bước 1:</strong> Người đăng tin truy cập vào Star, chọn
+					“Đăng tin rao”, sau đó thực hiện đầy đủ theo các bước hướng dẫn tại
+					Star. Chú ý các trường có dấu “*” là các trường bắt buộc phải điền.
+				</p>
+				<p>
+					<strong>Bước 2:</strong> Sau khi điền đầy đủ các thông tin, Người
+					đăng tin chọn “Đăng tin không cần tài khoản”.
+				</p>
+				<p>
+					<strong>Bước 3: </strong>Hệ thống gửi thông báo tình trạng đăng
+					tin. Nếu hệ thống báo tin đăng chưa thành công, Người đăng tin cần
+					xem lại và hoàn chỉnh mẫu đăng tin.
+				</p>
+				<p>
+					<strong>Lưu ý:</strong> Người đăng tin sử dụng hình thức đăng tin
+					này sẽ không thể tự mình thay đổi hay chỉnh sửa nội dung tin đã
+					đăng. Đồng thời chỉ được đăng không quá 03 (ba) tin hiển thị trên
+					Star.
+				</p>
+				<p>
+					<strong>2.&nbsp;&nbsp; &nbsp;Cách 2: Đăng tin bằng tài
+						khoản đã đăng ký thành viên trên Star</strong>
+				</p>
+				<p>
+					<br> <strong> Đăng tin</strong><br> -&nbsp;&nbsp;
+					&nbsp;Sau khi đăng ký và kích hoạt tài khoản thành công, Người đăng
+					tin sử dụng tài khoản đã đăng ký để đăng nhập vào trang thành viên
+					của Star và đăng tin theo các bước hướng dẫn.<br>
+					-&nbsp;&nbsp; &nbsp;Khi đăng tin theo hình thức này, Người đăng tin
+					có thể vào phần quản lý tin đăng để chỉnh sửa thông tin, đồng thời
+					sẽ được đăng số tin không giới hạn nếu đáp ứng đủ các điều kiện của
+					Star.
+				</p>
+				<p>
+					<u><strong>Chú ý:</strong></u><br> -&nbsp;&nbsp; &nbsp;Trong
+					quá trình đăng tin, Người đăng tin phải thực hiện đầy đủ các thao
+					tác theo hướng dẫn tại Star<br> -&nbsp;&nbsp; &nbsp;Điền đầy
+					đủ thông tin vào các trường có đánh dấu “*”<br> -&nbsp;&nbsp;
+					&nbsp;Tiêu đề và nội dung tin phải viết in thường, có dấu, đúng
+					chính tả. Nghiêm cấm mọi hình thức “viết nhịu”, viết tắt, ký tự đặc
+					biệt không rõ nghĩa hoặc ngôn ngữ khác tối nghĩa. Tin đăng sau 24h
+					sẽ được hệ thống kiểm duyệt và cho hiển thị trên Star.<br>
+					-&nbsp;&nbsp; &nbsp;Tin đăng phải tuân thủ theo quy định của Star
+					được đề cập tại Quy định đăng tin.
+				</p>
+				<p>
+					<span><strong id="qc4">IV.&nbsp;&nbsp; &nbsp;Quy trình giải
+							quyết tranh chấp, khiếu nại</strong></span>
+				</p>
+				<p>
+					<strong>1.&nbsp;&nbsp; &nbsp;Nguyên tắc giải quyết tranh
+						chấp, khiếu nại</strong>
+				</p>
+				<p>-&nbsp;&nbsp; &nbsp;Star là cổng trung gian kết nối và cung
+					cấp thông tin bất động sản giữa bên bán và bên mua; bên cho thuê và
+					bên thuê mà không tham gia vào bất kỳ hoạt động hay nội dung thỏa
+					thuận nào trong giao dịch giữa hai bên.</p>
+				<p>Các bên tham gia vào giao dịch mua bán, cho thuê bất động sản
+					phải tự thẩm định và chịu trách nhiệm đối với tất cả các thông tin
+					cá nhân, bất động sản và dịch vụ bất động sản khi tham gia giao
+					dịch. Theo đó, Người đăng tin phải điền đầy đủ thông tin được yêu
+					cầu cung cấp trên Star. Trường hợp Người đăng tin không cung cấp
+					đầy đủ, chính xác các thông tin được yêu cầu thì Star được miễn
+					trách nhiệm theo quy định tại Điều 13 Luật bảo vệ quyền lợi người
+					tiêu dùng năm 2010. Ban quản trị Star sẵn sàng hỗ trợ nhanh chóng
+					và kịp thời khi nhận được các phản hồi, khiếu nại về việc Người
+					đăng tin đăng nội dung tin đăng, quảng cáo không chuẩn xác, sai sự
+					thật…Trường hợp nhận được khiếu nại, Ban quản trị Star sẽ xác nhận
+					lại thông tin, và tùy theo mức độ, Star sẽ có những biện pháp xử lý
+					phù hợp, kịp thời.</p>
+				<p>-&nbsp;&nbsp; &nbsp;Star tôn trọng và nghiêm túc thực hiện
+					các quy định của pháp luật về bảo vệ quyền lợi của người tiêu dùng.
+					Vì vậy, đề nghị Người đăng tin cung cấp đầy đủ, chính xác, trung
+					thực và chi tiết các thông tin liên quan đến bất động sản và dịch
+					vụ khác liên quan (nếu có). Mọi hành vi lừa đảo, gian lận trong nội
+					dung tin đăng, giao dịch đều bị lên án và phải chịu hoàn toàn trách
+					nhiệm trước pháp luật.</p>
+				<p>-&nbsp;&nbsp; &nbsp;Các bên liên quan bao gồm: Người đăng tin
+					và người mua/ bán/cho thuê/ thuê có vai trò và trách nhiệm trong
+					việc giải quyết các vấn đề phát sinh (nếu có).</p>
+				<p>-&nbsp;&nbsp; &nbsp;Người mua/ bán/ cho thuê/ thuê có thể gửi
+					khiếu nại trực tiếp đến Người đăng tin hoặc thông qua ban quản trị
+					Star. Sau khi tiếp nhận khiểu nại, Star sẽ sẽ chuyển ngay khiếu nại
+					đó đến Người đăng tin bằng các phương thức nhanh chóng nhất.</p>
+				<p>-&nbsp;&nbsp; &nbsp;Người đăng tin phải chịu toàn bộ trách
+					nhiệm về nội dung tin đăng trên Star. Trường hợp có khiếu nại phát
+					sinh, Người đăng tin có trách nhiệm cung cấp văn bản giấy tờ chứng
+					thực thông tin liên quan đến sự việc đang gây mâu thuẫn, khiếu nại
+					cho Star và người có khiếu nại. Trong mọi trường hợp, Người đăng
+					tin phải có trách nhiệm giải quyết mọi khiếu nại của người có khiếu
+					nại liên quan đến bất động sản và dịch vụ bất động sản đi kèm (nếu
+					có).</p>
+				<p>-&nbsp;&nbsp; &nbsp;Trong trường hợp phát sinh mâu thuẫn,
+					khiếu nại, tranh chấp các bên sẽ ưu tiên giải quyết bằng biện pháp
+					thương lượng, hòa giải. Trong trường hợp thương lượng, hòa giải
+					không thành công thì Star yêu cầu các bên gửi đơn đến cơ quan nhà
+					nước có thẩm quyền để giải quyết theo quy định của pháp luật.</p>
+				<p>
+					<strong>2.&nbsp;&nbsp; &nbsp;Quy trình tiếp nhận và giải
+						quyết khiếu nại, tranh chấp:</strong>
+				</p>
+				<p>
+					-&nbsp;&nbsp; &nbsp;Bước 1: Tất cả các yêu cầu giải quyết khiếu
+					nại, tranh chấp sẽ được chuyển đến Bộ phận Chăm sóc khách hàng để
+					tiếp nhận.<br> Hotline: (024)35625939/ (024)35625940/19001881;
+					email: hotro@Star<br> -&nbsp;&nbsp; &nbsp;Bước 2: Bộ phận Chăm
+					sóc khách hàng sẽ tiếp nhận các khiếu nại nhanh chóng kịp thờitiến
+					hành xác minh lại những thông tin được cung cấp (qua nhân viên có
+					liên quan, và nội dung thông tin trên Star) và chuyển yêu cầu giải
+					quyết khiếu nạitranh chấp sang Bộ phận Kinh doanh để đưa ra phương
+					án giải quyết.<br> -&nbsp;&nbsp; &nbsp;Bước 3: Bộ phận Kinh
+					doanh đề xuất phương án giải quyết khiếu nại, tranh chấp và phản
+					hồi Bộ phận Chăm sóc khách hàng.<br> -&nbsp;&nbsp; &nbsp;Bước
+					4: Bộ phận Chăm sóc khách hàng xin ý kiến phê duyệt của Ban Giám
+					đốc.<br> -&nbsp;&nbsp; &nbsp;Bước 5: Ban Giám đốc xem xét và
+					phê duyệt phương án giải quyết khiếu nại, tranh chấp.<br>
+					-&nbsp;&nbsp; &nbsp;Bước 6: Bộ phận Chăm sóc khách hàng phản hồi
+					với người có yêu cầu giải quyết khiếu nại, tranh chấp về nội dung
+					khiếu nại, tranh chấp và phương án giải quyết khiếu nại, tranh chấp
+					(nếu có).<br> Trường hợp người có yêu cầu khiếu nại, tranh
+					chấp đồng ý với nội dung và phương án giải quyết khiếu nại, tranh
+					chấp thì quy trình tiếp nhận giải quyết khiếu nại, tranh chấp kết
+					thúc.<br> Trường hợp người có yêu cầu khiếu nại, tranh chấp
+					không đồng ý với phương án giải quyết khiếu nại, tranh chấp và yêu
+					cầu giải quyết lại thì yêu cầu giải quyết lại khiếu nại, tranh chấp
+					được Bộ phận Chăm sóc khách hàng tiếp nhận. Quy trình lặp lại các
+					Bước 2,3,4,5 và 6. Tại Bước 6, nếu thành viên vẫn không đồng ý với
+					phương án giải quyết khiếu nại, tranh chấp mà Bộ phận Chăm sóc
+					khách hàng đưa ra, người có yêu cầu khiếu nại, tranh chấp có quyền
+					khởi kiện tại tòa án hoặc trọng tài theo các quy định của pháp
+					luật.
+				</p>
+				<p>
+					<span><strong id="qc5">V.&nbsp;&nbsp; &nbsp;Quy trình thanh
+							toán</strong></span>
+				</p>
+				<p>
+					Người đăng tin và người mua/ bán/ cho thuê/ thuê tự trao đổi, thỏa
+					thuận các nội dung và điều kiện thanh toán. Star không tham gia vào
+					bất kỳ hoạt động hay nội dung thỏa thuận nào trong giao dịch giữa
+					hai bên.<br> Star khuyến khích Người đăng tin và người mua/
+					bán/ cho thuê/ thuê thực hiện thanh toán trong các giao dịch bất
+					động sản qua các hình thức đảm bảo như chuyển khoản, ủy nhiệm chi
+					…và có hóa đơn, chứng từ khác làm cơ sở cho việc giải quyết tranh
+					chấp, khiếu nại (nếu có) sau giao dịch.
+				</p>
+				<p>
+					<span><strong id="qc6">VI.&nbsp;&nbsp; &nbsp;Đảm bảo an toàn
+							giao dịch</strong></span>
+				</p>
+				<p>
+					-&nbsp;&nbsp; &nbsp;Star mong muốn trở thành cổng trung gian kết
+					nối và cung cấp thông tin bất động sản trực tuyến hàng đầu tại Việt
+					Nam, tạo điều kiện cho các bên có nhu cầu về bất động sản tìm kiếm
+					thông tin và kết nối với nhau một cách phù hợp nhất.<br>
+					-&nbsp;&nbsp; &nbsp;Star luôn cố gắng bảo vệ những thông tin được
+					đăng trên Star đa dạng và chính xác nhất có thể. Star sẽ nỗ lực tối
+					đa và nghiêm túc loại bỏ những thông tin không trung thực, không
+					chính xác hoặc/và có hàm ý thiếu lành mạnh, minh bạch.<br>
+					-&nbsp;&nbsp; &nbsp;Thị trường bất động sản rất phong phú, đa dạng;
+					đồng thời, thông tin về bất động sản được thay đổi và cập nhật liên
+					tục cùng với ý chủ quan của Người đăng tin khi mô tả sản phẩm dịch
+					vụ của họ. Do đó, Star, cũng giống như các sàn giao dịch thương mại
+					điện tử khác, không thể bảo đảm hoàn toàn tính chính xác các thông
+					tin, cũng như mô tả của các loại tin đăng trên Star.<br>
+					-&nbsp;&nbsp; &nbsp;Thông tin bất động sản do Người đăng tin đăng
+					tại Star không được coi là một thay thế cho bất kỳ nhận định về
+					pháp lý, phát ngôn của các doanh nghiệp hay các chuyên gia hay bất
+					kỳ một cơ quan nhà nước nào. Bởi vậy, Star khuyến nghị thành viên,
+					các bên có nhu cầu bất động sản hãy tìm hiểu thông tin bất động sản
+					thật kỹ trước khi đưa đến quyết định của mình. Hy vọng rằng Star sẽ
+					đem đến cho bạn những thông tin hữu ích nhất có thể.
+				</p>
+				<p>
+					<span><strong id="qc7">VII.&nbsp;&nbsp; &nbsp;Bảo vệ thông
+							tin thành viên</strong></span>
+				</p>
+				<p>
+					<strong>1.&nbsp;&nbsp; &nbsp; Mục đích và phạm vi thu thập
+						thông tin:</strong>
+				</p>
+				<p>
+					Star luôn cố gắng để những thông tin được đăng trên trang Star là
+					hữu ích và chính xác nhất. Để thực hiện điều đó, Star yêu cầu thành
+					viên phải cung cấp đầy đủ và chính xác mọi thông tin tại Star<br>
+					Các thông tin mà Star có thể thu thập từ thành viên bao gồm: họ
+					tên, giới tính, ngày sinh, email, mã số thuế, địa chỉ, điện thoại,
+					nghề nghiệp, nơi làm việc và các thông tin cần thiết khác.
+				</p>
+				<p>
+					<strong>2.&nbsp;&nbsp; &nbsp;Phạm vi sử dụng thông tin:</strong>
+				</p>
+				<p>
+					Các thông tin được thành viên cung cấp có thể dùng vào các mục đích
+					sau:<br> -&nbsp;&nbsp; &nbsp;Cung cấp dịch vụ trên Star mà
+					thành viên yêu cầu;<br> -&nbsp;&nbsp; &nbsp;Gửi thông tin giới
+					thiệu dịch vụ trên Star đến thành viên;<br> -&nbsp;&nbsp;
+					&nbsp;Phân tích, đánh giá và hoàn thiện sản phẩm, dịch vụ (kể cả
+					website), công nghệ, quy trình;<br> -&nbsp;&nbsp; &nbsp;Nâng
+					cao mối tương tác và liên kết với thành viên;<br>
+					-&nbsp;&nbsp; &nbsp;Giải quyết các vấn đề tranh chấp, khiếu nại
+					phát sinh liên quan đến việc sử dụng Star;<br> -&nbsp;&nbsp;
+					&nbsp;Ngăn chặn những hoạt động vi phạm pháp luật tại Việt Nam.<br>
+					Nếu không có sự đồng ý của thành viên, Star sẽ không cung cấp bất
+					kỳ thông tin nào liên quan đến thành viên cho bên thứ ba để sử dụng
+					vớimục đích quảng cáo.
+				</p>
+				<p>
+					<strong>3.&nbsp;&nbsp; &nbsp;Thời gian lưu trữ thông tin:</strong>
+				</p>
+				<p>
+					Các thông tin của thành viên được lữu trữ trong một thời gian cần
+					thiết, nhằm phục vụ cho các yêu cầu thành viên đưa ra.<br>
+					Thành viên có thể yêu cầu Star xóa dữ liệu cá nhân khi đã chấm dứt
+					là thành viên của Star.
+				</p>
+
+			</div>
+		</article>
+		<!-- pagination section -->
+	</div>
+	</content>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</body>
+</html>

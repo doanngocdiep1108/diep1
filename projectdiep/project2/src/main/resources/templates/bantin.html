@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexUser}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+<link rel="stylesheet" th:href="@{/css/style_Bantin_BanNhaDat.css}" />
+</head>
+<body class="content">
+
+	<content layout:fragment="main">
+	<div class="bantin row">
+		<div class="row-md" style="text-align: center;">
+			<form class="form-inline" th:action="@{/find}">
+				<select name="id"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Hình thức">
+					<option value="B">bds bán</option>
+					<option value="T">bds thuê</option>
+				</select> <input class="form-control " type="search" name="name"
+					placeholder="Search" aria-label="Search">
+				<!--Blue select-->
+				<select name="type"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Loại nhà đất">
+					<option value="">Loại nhà đất</option>
+					<option value="Nha Rieng">Nhà riêng</option>
+					<option value="Chung Cu">Chung cư</option>
+					<option value="Can Ho">Căn hộ</option>
+					<option value="Biet Thu">Biệt thự</option>
+					<option value="MatBang">Mặt bằng</option>
+					<option value="">Tất cả</option>
+				</select> <select name="s"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Diện tích">
+					<option value="100">Dưới 100 m2</option>
+					<option value="200">100 m2 - 200 m2</option>
+					<option value="300">200 m2 - 300 m2</option>
+					<option value="10000">Trên 300m2</option>
+				</select> <select name="price"
+					class="mdb-select form-control colorful-select dropdown-primary "
+					searchable="Giá">
+					<option value="100000000">Dưới 100 triệu</option>
+					<option value="1000000000">100 triệu - 1 tỷ</option>
+					<option value="2000000000">1 tỷ - 2 tỷ</option>
+					<option value="5000000000">2 tỷ - 5 tỷ</option>
+					<option value="10000000000">Trên 5 tỷ</option>
+				</select>
+				<button class="btn btn-success" type="submit">Search</button>
+			</form>
+		</div>
+
+
+		<aside class="col-md-3">
+			<div>
+				<div class="right-box">
+					<h2 class="title-right-box">Chuyên mục</h2>
+					<ul class="category-right">
+						<li><a href="#">Giới Thiệu</a></li>
+						<li><a href="#">Liên Hệ </a></li>						
+						<li><a href="#">Quy định đăng tin</a></li>
+						<li><a href="#">Quy chế hoạt động </a></li>
+					</ul>
+				</div>
+				<!-- right box -->
+				<div class="new-blog">
+					<h2 class="title-right-box">Bài viết mới</h2>
+					<div class="post-right" th:each="item1:${BDS1}">
+						<div class="image-post-right">
+							<img th:src="@{'getimg/'+${item1.image}}" width="80" />
+						</div>
+						<div class="detail-post-right">
+							<h5 th:text="${item1.name}" style="color: red"></h5>
+							<span th:text="${item1.time}"></span>
+						</div>
+					</div>
+
+					<!-- blog-right -->
+				</div>
+				<!-- right box -->
+				<div class="new-blog">
+					<h2 class="title-right-box">QUY CHẾ HOẠT ĐỘNG</h2>
+					<div class="post-right">
+						<div class="number-post">1</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc1">Nguyên tắc chung.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">2</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc2">Quy định chung.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">3</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc3">Quy trình đăng tin.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">4</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc4"> Quy trình giải quyết tranh chấp, khiếu nại.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">5</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc5">  Quy trình thanh toán.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">6</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc6">  Đảm bảo an toàn giao dịch.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					<div class="post-right">
+						<div class="number-post">
+							<span class="number">7</span>
+						</div>
+						<div class="detail-post-right">
+							<h2>
+								<a href="qchd/#qc7">  Bảo vệ thông tin thành viên.</a>
+							</h2>
+						</div>
+					</div>
+					<!-- post-right -->
+					 
+				</div>
+				
+
+			</div>
+			<!-- col-3 right -->
+		</aside>
+		<article class="col-md-9">
+			<div class="row section-article">
+				<div th:each="item:${BDS}">
+					<a th:href="@{'/chitiet/'+${item.id}}">
+					<div class="row btbds">
+							<div class="col-md-4">
+								<img th:src="@{'getimg/'+${item.image}}" width="280" />
+							</div>
+							<div class="col-md-8">
+								<h4 name="id" th:value="${item.id}" th:text="${item.name}" style="color: blue"></h4>
+								<p>
+									<span class="glyphicon glyphicon-map-marker"></span><i
+										th:text="${item.address}"></i>, <strong th:text="${item.city}"></strong>
+								</p>
+								<p>
+									<span class="glyphicon glyphicon-use" th:text="${item.people}"></span>
+								</p>
+								<i th:text="${item.time}"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</article>
+		<!-- pagination section -->
+	</div>
+	</content>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexUser}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+
+</head>
+<body>
+	<content layout:fragment="main">
+
+	<div class="main-container clearfix">
+		<section class="product-detail col-md-8 col-md-offset-2">
+
+			<div class="divide">&nbsp;</div>
+			<div class="detail-product" th:object="${BDS}" th:each="item:${BDS}">
+				<input type="hidden" th:field=*{id}>
+				<div class="detail-1 pad-bot-16">
+					<h3 class="title-detail">Thông tin mô tả</h3>
+					<div class="des-product">
+						<p th:field="*{note}" th:text="${item.note}"></p>
+					</div>
+				</div>
+				<div class="detail-2pad-16">
+					<h3 class="title-detail">Đặc điểm bất động sản</h3>
+					<div class="box-round-grey3">
+						<div class="row-1">
+							<span class="r1">Loại tin đăng:</span><span th:field="*{type}"
+								th:text="${item.type}" class="r2"></span>
+						</div>
+						<div class="row-1">
+							<span class="r1">Địa chỉ:</span><i class="r2"
+								th:field="*{address}" th:text="${item.address}"></i>, <i
+								class="r2" th:field="*{district}" th:text="${item.district}"></i>,
+							<i class="r2" th:field="*{city}" th:text="${item.city}"></i>
+						</div>
+						<div class="row-1">
+							<span class="r1">Diện tích:</span><span class="r2"
+								th:field="*{s}" th:text="${item.s}"></span> m2.
+						</div>
+						<div class="row-1">
+							<span class="r1">Giá:</span><span class="r2" th:field="*{price}"
+								th:text="${item.price}"></span>
+						</div>
+						<div class="row-1">
+							<span class="r1">Người đăng:</span><span class="r2"
+								th:field="*{people}" th:text="${item.people}"></span>
+						</div>
+						<div class="row-1">
+							<span class="r1">Số điện thoại:</span><span class="r2"
+								th:field="*{phone}" th:text="${item.phone}"></span>
+						</div>
+
+						<div th:each="item1:${IMAGE}">
+							<img th:src="@{'/getimg/'+${item1.image}}" style="max-width:100%;margin-top:10px; margin-bottom:10px"/>
+						</div>
+						<div class="detail-2 pad-16">
+							<span class="title-detail">Xem trên bản đồ</span>
+							<div class="map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3833.802447348544!2d108.1677603!3d16.0757381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218e6e72e66f5%3A0x46619a0e2d55370a!2zMTM3IE5ndXnhu4VuIFRo4buLIFRo4bqtcCwgVGhhbmggS2jDqiBUw6J5LCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1607307062248!5m2!1svi!2s"
+									width="600" height="450" frameborder="0" style="border: 0;"
+									allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								<div class="map-overlay"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	</content>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+.title-section-2 a {
+  color: #2874A6;
+  transition: all .3s;
+}
+.title-section-2 a:hover {
+  color: #34495E;
+  text-decoration: none;
+}
+.date-section-2 {
+  font-size: 14px;
+  color: #717D7E;
+}
+.section-article {
+  padding: 15px 0;
+}
+.section-article .detail-article h2 {
+  font-size: 22px;
+  margin: 0;
+}
+.section-article .detail-article h2 a {
+    color: #428bca;
+    text-decoration: none;
+    transition: all .3s;
+}
+.section-article .detail-article h2 a:hover {
+  color: #34495E;
+}
+.section-article .detail-article span {
+  display: block;
+  padding: 10px 0;
+  color: #5D6D7E;
+  font-size: 13px;
+}
+.section-article .detail-article p {
+  font-size: 14px;
+  color: #273746;
+  text-align: justify;
+}
+
+/* Right */
+.right-box {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+.new-blog {
+  margin: 20px 0;
+}
+.right-box h2.title-right-box {
+  background: #428bca;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  margin: 0;
+}
+.right-box .category-right {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+.right-box .category-right li {
+  padding: 5px 0;
+}
+.right-box .category-right li a {
+  color: #515A5A;
+  text-decoration: none;
+  transition: all .3s;
+  font-weight: 500;
+}
+.right-box .category-right li a:hover {
+  color: #428bca;
+}
+.right-box .blog-right .title-right-blog h2 {
+  font-size: 14px;
+}
+.new-blog .post-right {
+  display: flex;
+  padding: 20px 0;
+}
+.right-box .post-right .detail-post-right {
+  padding: 0 8px;
+}
+.new-blog h2.title-right-box {
+  background: #428bca;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  margin: 0;
+}
+.new-blog .post-right {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.new-blog .post-right .detail-post-right {
+  padding: 0 8px;
+}
+.new-blog .post-right .detail-post-right h2 {
+  font-size: 14px;
+  margin-bottom: 0;
+
+}
+.new-blog .post-right .detail-post-right h2 a {
+  color: #212F3C;
+  text-decoration: none;
+  transition: all .3s;
+}
+.new-blog .post-right .detail-post-right h2 a:hover {
+  color: #eb3e32;
+}
+.new-blog .post-right .detail-post-right span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #717D7E;
+}
+.new-blog .post-right .number-post {
+  background: #eb3e32;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px 20px;
+}
+
+
+
+.poly-cart{
+  margin-top: 20px;
+  
+}
+.poly-cart ul{
+  list-style-type: none;
+  
+}
+.poly-cart img{
+  
+  margin-left: 15px;
+
+}
+
+.poly-cart input{
+  margin-left: 15px;
+}

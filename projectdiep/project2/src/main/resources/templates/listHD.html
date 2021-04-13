@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{indexAdmin}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/poly.css}" />
+
+</head>
+<body>
+	<content layout:fragment="main">
+	<form class="form" th:action="@{/hd/find}" method="get">
+		<div class="form-group col-md-7 col-md-offset-2">
+			<input type="text" name="search" class=" form-control" placeholder="" />
+		</div>
+		<button type="submit" class="btn btn-primary">Search</button>
+	</form>
+	<br>
+	<a class="btn btn-primary" href="/hd/">ADD HD</a>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th scope="col">Id</th>
+				<th scope="col">File</th>
+				<th scope="col">Type</th>
+				<th scope="col">Time</th>
+				<th scope="col">Users</th>
+				<th></th>
+		</thead>
+		<tbody>
+			<tr th:each="item:${QLHD}">
+				<td th:text="${item.id}"></td>
+				<td th:text="${item.files}"></td>
+				<td th:text="${item.type}? 'Ban': 'Thue'"></td>
+				<td th:text="${item.time}"></td>
+				<td th:text="${item.users.fullname}"></td>
+				<td><a class="btn btn-primary btn-sm"
+					th:href="@{'/hd/edit/'+${item.id}}">Edit</a> | <a
+					class="btn btn-danger btn-sm" th:href="@{'/hd/delete/'+${item.id}}">Del</a></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	</content>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</body>
+</html>

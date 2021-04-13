@@ -1,0 +1,159 @@
+
+.content{
+    width: auto;
+    height: auto;
+    margin: 0 150px;
+}
+
+.menu{
+    height: 120px;
+    width:auto;
+    text-align: center;
+    background-color: white;
+}
+.navbar{
+    padding-top: 45px;
+    
+}
+.navbar a{
+    margin-left: 20px;
+    color: black;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-left{
+    float: left;
+}
+.nav-right{
+    float: right;
+}
+.head{
+    width: auto;
+    height: 360px;
+    background-image: url(/ass/ass/photo/123.jpg);
+    padding-top: 150px;
+}
+.slogan{
+    text-align: center;
+    color:rgb(240, 236, 22);
+
+}
+.main{
+    width: auto;
+    height: auto;
+}
+.main h3{
+    color: blue;
+    font-weight: bold;
+}
+.article{
+    float: left;
+    height: auto;
+}
+.aside{
+    float: right;
+    background-color: red;
+}
+.list-group{
+    margin-top: 10px;
+}
+.fter{
+    height: 400px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    background-color: rgb(4, 37, 48);
+
+}
+footer a{
+    color: white;
+}
+.fnav{
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contactlh{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 50px;
+}
+.h2{
+    font-variant: small-caps;
+    color: blue;
+    text-align: center;
+}
+.lh1{
+    color: blue;
+}
+.lhinput{
+    margin-left: 10px;
+}
+.lh{
+    margin:0 100px 0 100px;
+}
+
+.search{
+    border-radius: 3px;
+}
+
+.main1{
+    width: auto;
+    height: 380px;
+}
+.bds1{
+    width: 300px;
+    height: 350px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+
+.bds1 u{
+    float: right;
+}
+.adres{
+    height: 280px;
+
+}
+.adres h2{
+    position: absolute;
+    color: white;
+}
+.ctbds{
+    height: 600px;
+    overflow-x: auto;
+}
+.photo{
+    text-align: center;
+}
+/* bantin */
+.bantin{
+    height: auto;
+}
+.bantin h3{
+    color: blue;
+
+}
+.ban{
+    height: 600px;
+    overflow-x: auto;
+}
+.adres h2{
+    margin-left: 15px;
+    font-weight: bold !important;
+}
+
+b{
+ color: red;
+}
+
+.bds1 u{
+    color: rgb(0, 26, 255);
+}
+
+   

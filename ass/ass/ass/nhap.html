@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Poly -->
+    <link rel="stylesheet" href="css/poly.css">
+    <link rel="stylesheet" href="css/dangtin.css">
+    <!--angular-->
+    <script src="/js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> -->
+    <title>Home</title>
+</head>
+
+<body >
+    <div class=" row-md content">
+        <nav class="row-md" >
+            <div class="row-md menu">
+                <div class="col-md-2">
+                    <img src="/photo/logo.png" width="auto" height="120px" />
+                </div>
+                    <nav class=" navbar col-md-10">
+                        <div class="collapse navbar-collapse nav-left">
+            
+                            <div class="navbar-nav">
+                                
+                                <a class="nav-item nav-link active" href="#">trang chủ</a>
+                                <a class="nav-item nav-link" href="#">bản tin</a>
+                                <a class="nav-item nav-link" href="#">giới thiệu</a>
+                                <a class="nav-item nav-link" href="#">liên hệ</a>
+                                <a class="nav-item nav-link" href="#">hướng dẫn</a>
+                            </div>
+                        </div>
+                        
+                    </nav>
+            </div>
+        </nav>
+        <header class="row-md" >
+            <div class="row-md" style="text-align: center;">
+                <form class="form-inline">
+                    <select class="mdb-select form-control colorful-select dropdown-primary " searchable="Hình thức">
+                        <option value="1">bds bán</option>
+                        <option value="2">bds thuê</option>
+                    </select>
+                    <input class="form-control" type="search col-md-3" placeholder="Search" aria-label="Search">
+                    <!--Blue select-->
+                    <select class="mdb-select form-control colorful-select dropdown-primary " searchable="Loại nhà đất">
+                        <option value="1">Nhà riêng</option>
+                        <option value="2">Chung cư</option>
+                        <option value="3">Căn hộ</option>
+                        <option value="4">Biệt thự</option>
+                    </select>
+                    <select class="mdb-select form-control colorful-select dropdown-primary " searchable="Địa chỉ">
+                        <option value="1">Toàn quốc</option>
+                        <option value="2">Hồ Chí Minh</option>
+                        <option value="3">Đà Nẵng</option>
+                        <option value="4">Hà Nội</option>
+                    </select>
+                    <select class="mdb-select form-control colorful-select dropdown-primary " searchable="Diện tích">
+                        <option value="1">Dưới 100 m2</option>
+                        <option value="2">100 m2 - 200 m2</option>
+                        <option value="3">200 m2 - 300 m2 </option>
+                        <option value="4">Trên 300m2</option>
+                    </select>
+                    <select class="mdb-select form-control colorful-select dropdown-primary " searchable="Giá">
+                        <option value="1">Dưới 2 tỷ</option>
+                        <option value="2">2 tỷ - 5 tỷ</option>
+                        <option value="3">5 tỷ - 10 tỷ</option>
+                        <option value="4">Trên 10 tỷ</option>
+                    </select>
+            
+                  
+                </form>
+            </div>
+            
+            </div>
+        </header>
+        <div class="row-md" >
+            <div class="row-md main">
+                <article class="">
+                          <div class="dangtin">
+                             <div class="thongtin">
+                                 <p>Thông Tin</p>
+                           
+                                 <form>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlInput1">Tiêu đề</label>
+                                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Chung Cư Phú Lợi">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Hình</label>
+                                        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="jsp">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleFormControlInput1">Giá</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="100tr/m2">
+                                      </div>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlSelect1">Loại Hình</label>
+                                      <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Đất</option>
+                                        <option>Căn Hộ</option>
+                                        <option>Nhà cho thuê</option>
+                                        <option>Đất chung cư</option>
+                                        <option>Mặt Tiền</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlSelect2">Mô Tả</label>
+                                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Đăng tin</button>
+                                   
+                                  </form>
+                              
+                          </div>
+                             
+                     
+                    
+                </article>
+            
+            </div>
+        </div>
+        <footer class="row-md ">
+            <div class="fter row-md">
+                <div class="row-md ">
+                    <div class="col-md-3">
+                        <div style="text-align: center;">
+                            <img src="photo/logo.png" height="200px" width="auto" />
+                        </div>
+            
+                        <h2>Công ty TNHH Stars</h2>
+                        <p>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Tầng 9 tòa nhà Vĩnh Trung Plaza số 255 – 257 Hùng Vương, Phường Vĩnh Trung, Quận Thanh Khê, Đà Nẵng
+            
+                        </p>
+            
+                    </div>
+                    <div class="col-md-2">
+                        <p>
+                        <h4><b>Thông tin</b></h4>
+                        <a href="#">Liên hệ</a><br>
+                        <a href="#">Giới thiệu</a><br>
+                        <a href="#">Câu hỏi thường gặp</a><br>
+                        <a href="#">Quy chế hoạt động</a><br>
+                        <a href="#">Quy định đăng tin</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <h4><b>Hỗ trợ</b></h4>
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                        023 3456 3457
+                        <span class="glyphicon glyphicon-headphones"></span> Tổng đài CSKH: 1900 1888<br>
+                        <span class="glyphicon glyphicon-envelope">
+                            bdsstars@gmail.com</span><br>
+                        <span class="glyphicon glyphicon-globe">
+                            <a href="#">
+                                https://www.facebook.com/bdsStars/
+                            </a>
+                        </span><br>
+                        </p>
+                        <hr>
+                        <h3>Đăng kí nhận thông tin mới nhất!</h3>
+                        <form class="navbar-form">
+                            <div class="form-group ">
+                                <input type="text" class="form-control" placeholder="Nhập email!">
+            
+                            </div>
+                            <button type="submit" class="btn btn-success">Đăng kí</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Giấy phép hoạt động</h3>
+                        <p>Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010<br>
+                            Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 04/09/2014<br>
+                            Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br>
+                            Quy chế, quy định giao dịch có hiệu lực từ 23/02/2020
+                        </p>
+                    </div>
+                </div>
+                <div class="row-md">
+                   
+                    <p style="text-align: center;">Copyright © 2007 - 2020 Batdongsan.com.vn</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="js/layout.js"></script>
+</body>
+
+</html>
